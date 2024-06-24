@@ -43,13 +43,11 @@ def t_NUMBER(t):
     t.value = int(t.value)
     return t
 
-# Token de identificador
 def t_IDENTIFIER(t):
     r'[a-zA-Z_][a-zA-Z_0-9]*'
     t.type = reserved.get(t.value, 'IDENTIFIER')
     return t
 
-# Nueva línea
 def t_newline(t):
     r'\n+'
     t.lexer.lineno += len(t.value)

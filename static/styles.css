@@ -1,0 +1,105 @@
+:root {
+    --font: "Helvetica Neue", Arial, sans-serif;
+    --primary-color: #333;
+    --secondary-color: #666;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font);
+    font-size: 1.6rem;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 120rem;
+    width: 90%;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+
+.result_sem h2 {
+    margin-bottom: 10px;
+}
+
+.result_sem ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.result_sem ul li {
+    margin-bottom: 5px;
+}
+
+button {
+    margin-bottom: 2rem;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el textarea */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
